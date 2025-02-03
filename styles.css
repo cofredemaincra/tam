@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/home/dayana/Descargas/Diseño sin título.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #ff69b4;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  #okButton {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  #noButton {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  #errorMessages {
+    margin-top: 2rem;
+  }
+  
+  .error {
+    color: #f44336;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  .heart {
+    position: fixed;
+    font-size: 2rem;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  #videoLink {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  #videoLink a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #videoLink a:hover {
+    text-decoration: underline;
+  }
+  
+  
